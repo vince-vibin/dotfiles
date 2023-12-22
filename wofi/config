@@ -13,6 +13,5 @@ insensitive=true
 allow_images=true
 image_size=40
 gtk_dark=true
-
-[programs]
-brave="brave --enable-features=UseOzonePlatform --ozone-platform=wayland
+stylesheet=/home/vince/.config/wofi/style.css
+color=/home/vince/.config/wofi/macchiato.css

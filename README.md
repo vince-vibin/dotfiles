@@ -1,7 +1,5 @@
 # dotfiles
 **Still a work in progress**
 ## TODOS
-- Set Waybar Color
-- finish wofi config
-- clean up code
+- clean up
 - OPTIONAL: write install script

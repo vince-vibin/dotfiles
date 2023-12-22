@@ -1,82 +1,28 @@
-window {
-    margin: 0px;
-    border: 5px solid 1e1e2e;
-    background-color: #cdd6f4;
-    border-radius: 10px;
-}
+@import "/home/vince/.config/wofi/macchiato.css";
 
-#input {
-    padding: 4px;
-    margin: 4px;
-    padding-left: 20px;
-    border: none;
-    color: #cdd6f4;
-    font-weight: bold;
-    background-color: #1e1e2e;
-    /* background: ; */
-   	outline: none;
+#window {
+    padding: 2px;
+    border: 5px solid @crust;
+    background-color: @base;
     border-radius: 10px;
-    margin: 10px 13px;
-    margin-bottom: 2px;
-}
-#input:focus {
-    border: 0px solid #1e1e2e;
-    margin-bottom: 0px;
-}
-
-#inner-box {
-    margin: 4px;
-    border: 10px solid #1e1e2e;
-    color: #cdd6f4;
-    font-weight: bold;
-    background-color: #1e1e2e;
-    /* background-color: red; */
-    border-radius: 15px;
+    color: @text
 }
 
 #outer-box {
-    margin: 0px;
-    border: 1.5px solid #ffffff;
-    border-radius: 10px;
-    background-color: #1e1e2e;
+	padding: 10px;
 }
 
-#scroll {
-    margin-top: 5px;
-    border: none;
-    border-radius: 15px;
-    margin-bottom: 5px;
-}
-
-#img{
-    margin-right: 10px;
-}
-
-#img:selected {
-    background-color: #89b4fa;
-    margin-right: 10px;
-    border-radius: 10px;
-}
-
-#text:selected {
-    color: #cdd6f4;
-    color: black;
-    margin: 0px 0px;
-    border: none;
-    border-radius: 10px;
-    background-color: #89b4fa;
+#input {
+	background-color: @surface0;
+	border-color: @green;
 }
 
 #entry {
-    margin: 0px 0px;
-    border: none;
-    border-radius: 15px;
-    background-color: transparent;
+	color: @text;	
 }
 
 #entry:selected {
-    margin: 0px 0px;
-    border: none;
-    border-radius: 5px;
-    background-color: #89b4fa;
+	background-color: @surface2;
+	border-radius: 5px;
+	border-bottom: 2px;
 }
