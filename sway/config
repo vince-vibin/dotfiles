@@ -8,14 +8,14 @@ input * xkb_layout "de"
 #
 font pango: SourceCodePro Medium 10
 
-include "$HOME/.cache/wal/colors-sway"
+include "$HOME/.cache/wal/catppuccin-macchiato"
 
 ### Variables
 #
 set $mod Mod4
 set $term kitty
 set $menu wofi
-set $wallpaper $HOME/.config/sway/wallpapers/kurzgesagt.png
+set $wallpaper $HOME/.config/sway/wallpapers/nordic-mountains.png
 
 output * bg $wallpaper fill
 
