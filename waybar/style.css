@@ -94,8 +94,13 @@ button:hover {
 }
 
 #mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    padding: 0 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 7px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: @surface1;
 }
 
 /* MODULES */

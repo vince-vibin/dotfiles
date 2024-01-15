@@ -5,4 +5,5 @@
 - fastfetch
 - SHELL
 - PS1
+- Greeter
 - OPTIONAL: write install script

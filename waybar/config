@@ -1,10 +1,6 @@
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
+    "height": 30,
+    "spacing": 4,
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/spotify"],
     "modules-center": ["clock", "custom/weather"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "disk", "battery"],
@@ -14,7 +10,7 @@
         "warp-on-scroll": false,
         "format": "{icon}",
         "format-icons": {
-	    "default": "",
+	        "default": ""
     	}
     },
     "sway/mode": {
@@ -29,7 +25,7 @@
     },
     "clock": {
     	"format": "{:%a, %d %b, %H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -55,7 +51,6 @@
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{signalStrength}% ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
@@ -64,16 +59,14 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "bluetooth": {
-	// "controller": "controller1",
 	"format": " {status}",
-	"format-disabled": "", // an empty format will hide the module
+	"format-disabled": "",
 	"format-connected": " {num_connections} connected",
 	"tooltip-format": "{controller_alias}\t{controller_address}",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -94,7 +87,7 @@
     "disk": {
 	"format": "{percentage_used}% ",
 	"interval": "180",
-	"path": "/",
+	"path": "/"
     },
     "custom/spotify": {
         "exec": "/usr/bin/python3 $HOME/.config/waybar/scripts/mediaplayer.py",
@@ -107,6 +100,6 @@
     "custom/weather": {
         "format": "{}",
         "interval": 1800,
-        "exec": "/usr/bin/python3 $HOME/.config/waybar/scripts/weather-custom.py",
-    },
+        "exec": "/usr/bin/python3 $HOME/.config/waybar/scripts/weather-custom.py"
+    }
 }
