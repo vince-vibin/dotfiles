@@ -8,14 +8,14 @@ input * xkb_layout "de"
 #
 font pango: SourceCodePro Medium 10
 
-include "$HOME/.cache/wal/catppuccin-macchiato"
+include "$HOME/.config/sway/catppuccin-macchiato"
 
 ### Variables
 #
 set $mod Mod4
 set $term kitty
 set $menu wofi
-set $wallpaper $HOME/.config/sway/wallpapers/nordic-mountains.png
+set $wallpaper $HOME/.config/sway/wallpapers/ign_mountains.png
 
 output * bg $wallpaper fill
 
@@ -65,11 +65,13 @@ exec swayidle -w \
     bindsym $mod+b exec /bin/brave --enable-features=UseOzonePlatform --ozone-platform=wayland > /dev/null
     # Audio controlls
     bindsym $mod+XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-    bindsym $mod+XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym $mod+XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym $mod+XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym $mod+XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym $mod+XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     # lock screen
     bindsym $mod+l exec swaylock -i $wallpaper
+    # screen shot
+    bindsym $mod+Shift+s exec grim
 #
 # Moving around:
 #
